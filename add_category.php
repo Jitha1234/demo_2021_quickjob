@@ -10,7 +10,7 @@ include('include/sidebar.php');
            
 		   <nav aria-label="breadcrumb">
 			  <ol class="breadcrumb">
-				<li class="breadcrumb-item"><a href="admin_dashboard.php">dashboard</a></li>
+				<li class="breadcrumb-item"><a href="admin_dashboard.php">Home</a></li>
 				<li class="breadcrumb-item"><a href="category.php">Category</a></li>
 				<li class="breadcrumb-item"><a href="#">Add Category</a></li>
 				

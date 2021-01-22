@@ -9,14 +9,14 @@ include('include/sidebar.php');
          <nav aria-label="breadcrumb">
 			  <ol class="breadcrumb">
 				<li class="breadcrumb-item"><a href="admin_dashboard.php">Dashboard</a></li>
-				<li class="breadcrumb-item"><a href="#">Apply Jobs</a></li>
+				<li class="breadcrumb-item"><a href="#">Accepted Applicant List</a></li>
 				
 			  </ol>
 			</nav>
 
 
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
-		 <h1 class="h2">All Jobs</h2>
+		 <h1 class="h2">Accepted Applicant List</h2>
             <div class="btn-toolbar mb-2 mb-md-0">
               <div class="btn-group mr-2">
                 
@@ -35,10 +35,10 @@ include('include/sidebar.php');
            
 				<th>Job Seeker Name</th>
 				<th>Job Seeker Email</th>
-				<th>File</th>
+				
 				<th>Applied Date</th>
                 
-				<th>Action</th>
+				<th></th>
             </tr>
         </thead>
         <tbody>
@@ -62,14 +62,13 @@ include('include/sidebar.php');
 				<td><?php echo $row['first_name']; ?> <?php echo $row['last_name']; ?> </td>
 				<td><?php echo $row['job_seeker']; ?></td>
 				
-				<td> <a href="https://localhost:8080/job_portal/files/<?php echo  $row['file']; ?>" >Downloded file</a></td>
 				<td><?php echo $row['apply_date']; ?></td>
 				<td>
-				  <div class="row">
+				 <!-- <div class="row">
 				   <div class="btn-group">
 				     <a href="view_applied_jobs.php?id=<?php echo $row['id']; ?>"class="btn btn-success"><span class="glyphicon glyphicon-eye-open"></span></a>
 				      </div>
-				  </div>
+				  </div> -->
 			   </td>
       
             </tr>
@@ -81,9 +80,9 @@ include('include/sidebar.php');
                 <th>Job Title</th>
 				<th>Job Seeker Name</th>
 				<th>Job Seeker Email</th>
-				<th>Files</th>
+				
                 <th>Applied Date</th>
-				<th>Action</th>
+				<th></th>
                 
             </tr>
         </tfoot>
